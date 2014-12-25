@@ -273,6 +273,8 @@ if (typeof jQuery !== 'undefined') {
                             this.romSelect.append(optgroup);
                         }
                     }
+                    this.romSelect.children().eq(1).children().eq(0).attr("selected", true);
+                    this.loadROM();
                 },
             
                 writeAudio: function(samples) {
